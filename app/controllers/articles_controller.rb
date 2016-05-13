@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 
+	# Grab all articles from database
 	def index
+		@articles = Article.all
 	end
 
 

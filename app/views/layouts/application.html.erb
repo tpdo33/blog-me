@@ -8,6 +8,11 @@
 </head>
 <body>
 
+	<!-- partial for navbar -->
+	<%= render 'layouts/navibar' %>
+	<div class= "container">
+
+
 	<%flash.each do |name, msg| %>
 	<ul>
 		<li><%=msg%></li>
@@ -15,6 +20,7 @@
 	<%end%>
 
 <%= yield %>
-
+</div>
+<%= render 'layouts/footer' %>
 </body>
 </html>

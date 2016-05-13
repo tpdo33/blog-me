@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>BlogMe</title>
+  <link rel="stylesheet" media="all" href="./BlogMe_files/custom.self-061fd8b2e6ff0a31eaa3dfb79e48c3a822401b2cc136353482a50f39124e43cc.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="./BlogMe_files/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css" data-turbolinks-track="true">
+  <script src="./BlogMe_files/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js" data-turbolinks-track="true"></script>
+<script src="./BlogMe_files/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="fGOaSILrnVZ22ZepXk6HxDU4vcMhyzRVAz4TlYxA50knCCSfDMMxws+8Y5IlFdrciss2hdWt60vWBXf/ZglYvg==">
+</head>
+<body cz-shortcut-listen="true">
+
+	<!-- partial for navbar -->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <!--  <a class="navbar-brand" id="logo" href="#">Blog Me</a> -->
+      <a class="navbar-brand" id="logo" href="http://localhost:3000/">Blog Me</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+        <li><a href="http://localhost:3000/articles">Articles</a></li>
+        <li><a href="http://localhost:3000/#">Link</a></li>
+        <li class="dropdown">
+          <a href="http://localhost:3000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a href="#">Action</a></li> -->
+            <li><a href="http://localhost:3000/articles/new">New Article</a></li>
+            <li><a href="http://localhost:3000/#">Another action</a></li>
+            <li><a href="http://localhost:3000/#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:3000/#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:3000/#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:3000/#">Link</a></li>
+        <li class="dropdown">
+          <a href="http://localhost:3000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://localhost:3000/#">Action</a></li>
+            <li><a href="http://localhost:3000/#">Another action</a></li>
+            <li><a href="http://localhost:3000/#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:3000/#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+
+
+
+
+
+
+	
+	<title>Home</title>
+
+
+	<div class="center jumbotron">
+  <h1>blog me</h1>
+	<a class="btn btn-danger btn-lg btn-xlg" href="http://localhost:3000/#">Sign up now</a> 
+</div>
+
+
+	
+
+
+</div>
+<div class="container">
+	<footer class="footer">
+		<small>
+			Copyright © 2016<a href="https://github.com/tpdo33"> Theresa Do </a> 
+		</small>
+		<nav>
+			<ul>
+				<li><a href="http://localhost:3000/about">About</a> </li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+
+
+</body></html>

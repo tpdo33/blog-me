@@ -11,6 +11,11 @@ $navbar-default-bg: #8B0E3A;
 	font-weight: bold;
 }
 
+#link-color{
+color: #F3E6D3;
+	
+}
+
 #logo:hover {
 	color: #929292;
 	text-decoration: none;
@@ -21,14 +26,14 @@ $navbar-default-bg: #8B0E3A;
 }
 
 .jumbotron {
-	background-image: asset-url('cloudz.jpg');
+	background-image: asset-url('clouds.jpg');
 	background-size:1150px 560px;
 	height: 550px;
 	background-repeat: no-repeat;
 }
 
 .jumbotron h1{
-	color:#F3E6D3;
+	color:#0E0C40;
 	text-align: center;
 	margin-bottom: 30px;
 	letter-spacing: -1px;
@@ -37,7 +42,7 @@ $navbar-default-bg: #8B0E3A;
 
 .btn-xlg{
 	font-size:30px;
-	background-color: pink;
+	background-color: #1C98A6;
 }
 
 .article-meta-details {

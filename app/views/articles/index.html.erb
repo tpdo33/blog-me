@@ -1,4 +1,7 @@
 <h1 align ="center"> List all of the articles </h1>
+<div align ="center">
+	<%= will_paginate %>
+</div>
 <!-- list all of the articles from the database -->
 <% @articles.each do |article| %>
 	<div class ="row">
@@ -25,3 +28,7 @@
 		</div>
 	</div>
 <%end %>
+
+<div align ="center">
+	<%= will_paginate %>
+</div>

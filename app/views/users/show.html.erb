@@ -1,6 +1,15 @@
-<h1 align ="center"> List all of the articles </h1>
+<h1 align = "center"> Welcome to <%=@user.username %>'s page </h1>
+
+<div class ="row">
+	<div class ="col-md-4 col-md-offset-4 center">
+		<%= gravatar_for @user, size: 150 %>
+	</div>
+</div>
+
+<h4 align ="center"><%= @user.username %>'s articles </h4>
+
 <!-- list all of the articles from the database -->
-<% @articles.each do |article| %>
+<% @user.articles.each do |article| %>
 	<div class ="row">
 		<div class ="col-xs-8 col-xs-offset-2">
 			<div class ="well well-lg">

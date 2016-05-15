@@ -1,1 +1,2 @@
 This is the repository for a blog clone app using Ruby on Rails (CRUD)
+

@@ -1,3 +1,4 @@
+<!-- Show one user and their articles -->
 <h1 align = "center"> Welcome to <%=@user.username %>'s page </h1>
 
 <div class ="row">
@@ -7,9 +8,7 @@
 </div>
 
 <h4 align ="center"><%= @user.username %>'s articles </h4>
-
-
-<!-- list all of the articles from the database -->
+<!-- list all of the user's articles from the database -->
 <% @user.articles.each do |article| %>
 	<div class ="row">
 		<div class ="col-xs-8 col-xs-offset-2">

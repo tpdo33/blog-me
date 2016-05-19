@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
 		@articles =Article.paginate(:page => params[:page], :per_page => 5)
 	end
 
-
 	def show
 	end
 

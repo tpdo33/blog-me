@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
 	def new
 	end
 
+	# create session
 	def create
 		user = User.find_by(email: params[:session][:email].downcase)
 		if user && user.authenticate(params[:session][:password])
@@ -15,6 +16,7 @@ class SessionsController < ApplicationController
 		end
 	end
 
+	# logout of session
 	def destroy
 		session[:user_id] = nil
 		flash[:success] = "You have logged out"

@@ -3,8 +3,8 @@ class UsersController < ApplicationController
 	before_action :require_same_user, only: [:edit, :update, :destroy]
 	before_action :require_admin, only: [:destroy]
 
+	# show all users
 	def index
-		
 		@users =User.paginate(:page => params[:page], :per_page => 5)
 	end
 
@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
+	# create new user
 	def create
 		user = User.new(user_params)
 		if user.valid?
@@ -25,11 +26,10 @@ class UsersController < ApplicationController
 	end
 
 	def edit
-		# @user = User.find(params[:id])
 	end
 
+	# update user info
 	def update
-		# @user = User.find(params[:id])
 		if @user.update(user_params)
 			flash[:sucess] = " Your account was updated successfully"
 			redirect_to "/articles"
@@ -39,10 +39,9 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		# @user = User.find(params[:id])
-	
 	end
 
+	# delete user + articles
 	def destroy
 		@user = User.find(params[:id])
 		@user.destroy
